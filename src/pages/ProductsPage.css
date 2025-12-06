@@ -1,26 +1,22 @@
-/* Mover el contenido hacia la derecha para no quedar debajo del sidebar */
 .products-container {
-  margin-left: 220px; /* Ajusta según el tamaño de tu sidebar */
+  margin-left: 220px; 
   padding: 20px;
 }
 
-/* Título */
 .page-title {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: left;
 }
 
-/* Grid con espacio real entre elementos */
 .products-grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px; /* 🔥 MÁS SEPARACIÓN ENTRE PRODUCTOS */
+  gap: 25px; 
   padding-right: 20px;
 }
 
-/* Tarjetas */
 .product-card {
   background: white;
   border-radius: 10px;
@@ -28,17 +24,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 
-  /* 🔥 EFECTO SUAVE DE ZOOM */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* 🔥 EFECTO ZOOM AL PASAR EL MOUSE */
 .product-card:hover {
   transform: scale(1.06);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Imágenes */
 .product-card img {
   width: 100%;
   height: 150px;
@@ -46,7 +39,6 @@
   border-radius: 6px;
 }
 
-/* Texto */
 .product-card h3 {
   font-size: 0.9rem;
   margin: 10px 0 5px;

@@ -23,7 +23,7 @@ export default function RegisterProductPage() {
         console.error("Error cargando categorías:", err);
       }
 
-      // cargar productos de API (solo para validar nombres)
+      // cargar productos de API (solo valida nombres)
       try {
         const resProd = await fetch("https://api.escuelajs.co/api/v1/products");
         const dataProd = await resProd.json();
@@ -32,7 +32,6 @@ export default function RegisterProductPage() {
         console.error("Error cargando productos:", err);
       }
 
-      // no cargamos aquí los locales (no necesario para el formulario)
     }
 
     loadData();
